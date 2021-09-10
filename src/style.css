@@ -17,15 +17,22 @@ body {
     padding: 20vh 0;
   }
 
-  form {
+  form, .card {
     background-color: rgba(29, 8, 49, 0.788);
     display: flex;
     color: whitesmoke;
+    font-size: 0.7rem;
     width: 60%;
     height: 100%;
   }
 
-  fieldset {
+  .card {
+    background-color:  rgba(144, 86, 199, 0.459);
+    padding: 2rem;
+
+  }
+
+  fieldset, .card {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -35,25 +42,40 @@ body {
     box-shadow:  0 0 0.5rem #d330bc, 0 0 1rem #d82dec;
   }
 
-  fieldset h2, input, button {
-    border-style: none;
+  li {
+    list-style: none;
+    padding: 5%;
+    font-size: 00.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  fieldset h2, input, button, h1 {
     margin-bottom: 0.8rem;
     letter-spacing: 0.2em;
   }
 
   .searchInput {
+    border-style: none;
     padding: 0.8rem;
     width: 40%;
     font-size: 0.6rem;
   }
 
 .btn {
-  background-color: rgb(222, 168, 238);
+  background-color: rgb(184, 70, 219);
   padding: 0.6rem;
   font-family: 'Urbanist', sans-serif;
   color: black;
   font-weight: bold;
   font-size: 0.6rem;
+  border-style: none;
+  box-shadow: 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(216, 159, 233);
 }
 
   footer {
@@ -66,7 +88,16 @@ body {
     bottom: 0;
     width: 100%;
     background-color: rgba(29, 8, 49, 0.548);
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.616);
     text-align: center;
+    font-size: 0.7rem;
     border-top: 1px solid whitesmoke;
+  }
+
+  .flag {
+    width: 4rem;
+  }
+
+  .cards {
+    display: none;
   }
