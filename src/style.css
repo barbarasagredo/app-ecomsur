@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
+body {
+  margin: 0; 
+  background: url(./images/background.jpg);
+  height: 100%;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: lighter;
+}
+
+  .container {
+    overflow: hidden;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20vh 0;
+  }
+
+  form {
+    background-color: rgba(29, 8, 49, 0.788);
+    display: flex;
+    color: whitesmoke;
+    width: 60%;
+    height: 100%;
+  }
+
+  fieldset {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid rgb(123, 62, 184);
+    box-shadow:  0 0 0.5rem #d330bc, 0 0 1rem #d82dec;
+  }
+
+  fieldset h2, input, button {
+    border-style: none;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.2em;
+  }
+
+  .searchInput {
+    padding: 0.8rem;
+    width: 40%;
+    font-size: 0.6rem;
+  }
+
+.btn {
+  background-color: rgb(222, 168, 238);
+  padding: 0.6rem;
+  font-family: 'Urbanist', sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 0.6rem;
+}
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(29, 8, 49, 0.548);
+    color: whitesmoke;
+    text-align: center;
+    border-top: 1px solid whitesmoke;
+  }
