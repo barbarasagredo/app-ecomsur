@@ -2,7 +2,6 @@ const url = 'https://restcountries.eu/rest/v2/all'
 fetch(url)
   .then(response => response.json())
   .then(data => {
-    console.log(data.name)
     let countryTmp = "";
     data.forEach(item => {
       const card = `
@@ -22,7 +21,28 @@ fetch(url)
       countryTmp += card;
     });
     document.getElementById("cards").innerHTML = countryTmp;
-  })
-  .catch(err => console.log(err))
+  });
 
-  
+
+const searchHandler = document.querySelector('#form');
+const buttonSearch = document.querySelector('#button');
+const data = fetch('https://restcountries.eu/rest/v2/all')
+
+const filterCountry = (data) => {
+  console.log(searchHandler.value);
+
+  const textInput = searchHandler.value.toLowerCase();
+  // console.log(textInput)
+  const arr = data.filter(item => {
+    let countryName = item.name.toLowerCase();
+    if(countryName.indexOf(textInput) !== -1){
+      return item
+    }
+  })
+}
+
+formCountries.addEventListener('submit', e => {
+  e.preventDefault()
+})
+
+buttonSearch.addEventListener('click', filterCountry)
